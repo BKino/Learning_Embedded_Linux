@@ -1,0 +1,2 @@
+test O_APPEND
+test O_APPENDtest O_APPENDtest O_APPENDtest O_APPEND
