@@ -14,7 +14,7 @@ int main(int argc , char *argv[]) {
         fprintf(stderr, "Usage : %s <file>\n", argv[0]);
         return 1;
     }
-    if(stat(argv[1], &file_stat) == -1){
+    if (stat(argv[1], &file_stat) == -1) {
         fprintf(stderr, "Cannot read file %s : %s\n", argv[1], strerror(errno));
       return errno;
 
