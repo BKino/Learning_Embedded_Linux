@@ -8,14 +8,14 @@
 #include <errno.h>
 
  
-int main(int argc , char *argv[]){
+int main(int argc , char *argv[]) {
     struct stat file_stat;
-    if (argc != 2){
-        fprintf(stderr, "Usage : %s <file>\n",argv[0]);
+    if (argc != 2) {
+        fprintf(stderr, "Usage : %s <file>\n", argv[0]);
         return 1;
     }
     if(stat(argv[1], &file_stat) == -1){
-        fprintf(stderr, "Cannot read file %s : %s\n", argv[1],strerror(errno));
+        fprintf(stderr, "Cannot read file %s : %s\n", argv[1], strerror(errno));
       return errno;
 
     }
